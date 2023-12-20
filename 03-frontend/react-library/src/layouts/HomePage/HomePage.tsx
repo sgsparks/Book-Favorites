@@ -1,4 +1,4 @@
-import { Carousel } from "react-bootstrap";
+import { Carousel } from "./components/Carousel";
 import { ExploreTopBooks } from "./components/ExploreTopBooks";
 import { Heros } from "./components/Heros";
 import { LibraryServices } from "./components/LibraryServices";
