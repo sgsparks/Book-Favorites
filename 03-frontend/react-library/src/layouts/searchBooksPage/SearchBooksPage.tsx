@@ -27,6 +27,8 @@ export const SearchBooksPage = () => {
 
             const loadedBooks: BookModel[] = [];
 
+            console.log(responseData)
+
             for (const key in responseData) {
                 loadedBooks.push({
                     id: responseData[key].id,

@@ -14,6 +14,8 @@ public class Book {
     private String title;
     @Column(name="author")
     private String aurthur;
+    @Column(name="description")
+    private String description;
     @Column(name="copies")
     private int copies;
     @Column(name="copiesAvailable")
