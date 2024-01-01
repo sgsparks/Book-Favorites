@@ -6,21 +6,31 @@ import javax.persistence.*;
 @Table( name = "book")
 @Data
 public class Book {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
+    @Column(name = "id")
     private Long id;
-    @Column(name="title")
+
+    @Column(name = "title")
     private String title;
-    @Column(name="author")
-    private String aurthur;
-    @Column(name="description")
+
+    @Column(name = "author")
+    private String author;
+
+    @Column(name = "description")
     private String description;
-    @Column(name="copies")
+
+    @Column(name = "copies")
     private int copies;
-    @Column(name="copiesAvailable")
+
+    @Column(name = "copies_available")
     private int copiesAvailable;
-    @Column(name="img")
+
+    @Column(name = "category")
+    private String category;
+
+    @Column(name = "img")
     private String img;
 
 }
