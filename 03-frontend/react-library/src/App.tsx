@@ -6,6 +6,7 @@ import { HomePage } from './layouts/HomePage/HomePage';
 import { SearchBooksPage } from './layouts/searchBooksPage/SearchBooksPage';
 import { Redirect, Route } from 'react-router-dom';
 import Switch from 'react-bootstrap/esm/Switch';
+import { BookCheckoutPage } from './layouts/BookCheckoutPage/BookCheckOutPage';
 export const App = () => {
   return (
     <div className='d-flex flex-column min-vh-100'>
@@ -20,6 +21,9 @@ export const App = () => {
         </Route>
         <Route path='/search'>
           <SearchBooksPage />
+        </Route>
+        <Route path='/checkout/:bookId'>
+          <BookCheckoutPage />
         </Route>
       </Switch>
       </div>
